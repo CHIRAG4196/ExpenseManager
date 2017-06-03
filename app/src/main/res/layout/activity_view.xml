@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chirag.expensemanager.ViewActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Expense Details"
+        android:textColor="#00a78e"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:padding="20dip">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="Name :"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="Chirag Patel"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="Date :"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="19/08/19"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="Mode :"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_amount_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="Cash"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="Rupees :"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="₹5000"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:text="Discription :"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dip" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_descritption"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="30dip"
+            android:lines="5"
+            android:text="Utsav shah detail utsav shah"
+            android:textSize="17sp"
+            android:layout_marginLeft="15dip" />
+    </GridLayout>
+</LinearLayout>
